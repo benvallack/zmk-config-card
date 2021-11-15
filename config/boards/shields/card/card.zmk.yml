@@ -1,0 +1,12 @@
+file_format: "1"
+id: card
+name: The Card 
+type: shield
+url: https://github.com/benvallack/zmk-config-card
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - card_left
+  - card_right
