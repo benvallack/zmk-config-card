@@ -51,7 +51,7 @@
         lshift {
             timeout-ms = <50>;
 	    key-positions = <16 17>;
-            bindings = <&kp LSHIFT>;
+            bindings = <&sk LSHIFT>;
         };
         rshift {
             timeout-ms = <50>;
