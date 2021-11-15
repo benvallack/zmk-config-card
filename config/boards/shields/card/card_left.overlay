@@ -4,4 +4,4 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "flipper.dtsi"
+#include "card.dtsi"
