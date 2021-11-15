@@ -11,7 +11,7 @@
 
 
 &mt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <201>;
     flavor = "tap-preferred";
  };
 &sk {
@@ -30,7 +30,7 @@
         };
         combo_bksc {
             timeout-ms = <20>;
-            key-positions = <23 24>;
+            key-positions = <21 22>;
             bindings = <&to 3>;
         };
         combo_ent {
@@ -40,17 +40,17 @@
         };
         combo_1 {
             timeout-ms = <50>;
-	    key-positions = <26 27>;
+	    key-positions = <24 25>;
             bindings = <&to 1>;
         };
         combo_3 {
             timeout-ms = <50>;
-	    key-positions = <4 5>;
+	    key-positions = <5 6>;
             bindings = <&kp BKSP>;
         };
         caps {
             timeout-ms = <50>;
-	    key-positions = <24 25>;
+	    key-positions = <22 23>;
             bindings = <&kp CAPS>;
         };
         rshift {
@@ -60,12 +60,12 @@
         };
         osl {
             timeout-ms = <50>;
-	    key-positions = <3 5>;
+	    key-positions = <4 6>;
             bindings = <&sl 5>;
         };
         g {
             timeout-ms = <10>;
-	    key-positions = <8 9>;
+	    key-positions = <10 11>;
             bindings = <&kp G>;
 	    layers = <0>; 
         };
@@ -83,13 +83,13 @@
         };
         b {
             timeout-ms = <20>;
-	    key-positions = <22	23>;
+	    key-positions = <20	21>;
             bindings = <&kp B>;
 	    layers = <0>; 
         };
         sqt {
             timeout-ms = <20>;
-	    key-positions = <8 9>;
+	    key-positions = <10 11>;
             bindings = <&kp SQT>;
 	    layers = <1 5>; 
         };
@@ -101,25 +101,25 @@
         };
         bslh {
             timeout-ms = <20>;
-	    key-positions = <12	13>;
+	    key-positions = <12 13>;
             bindings = <&kp BSLH>;
 	    layers = <1>; 
         };
         lbkt {
             timeout-ms = <20>;
-	    key-positions = <22	23>;
+	    key-positions = <20 21>;
             bindings = <&kp LBKT>;
 	    layers = <1>; 
         };
         
         plus {
             timeout-ms = <20>;
-	    key-positions = <8 9>;
+	    key-positions = <10 11>;
             bindings = <&kp LS(EQUAL)>; 
 	    layers = <2>; 
         };
 	prcnt {
-            timeout-ms = <20>;
+            timeout-ms = <21>;
 	    key-positions = <18 19>;
             bindings = <&kp PRCNT>;
 	    layers = <2>; 
@@ -132,13 +132,13 @@
         };
         n0 {
             timeout-ms = <20>;
-	    key-positions = <22	23>;
+	    key-positions = <20 21>;
             bindings = <&kp N0>;
 	    layers = <2>; 
         };
         lalt {
             timeout-ms = <20>;
-	    key-positions = <8 9>;
+	    key-positions = <10 11>;
             bindings = <&kp LALT>; 
 	    layers = <3>; 
         };
@@ -156,7 +156,7 @@
         };
         lclk {
             timeout-ms = <20>;
-	    key-positions = <22	23>;
+	    key-positions = <20	21>;
             bindings = <&mkp LCLK>;
 	    layers = <3>;
         };

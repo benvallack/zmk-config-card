@@ -1,8 +1,8 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_FLIPPER_LEFT
-	def_bool $(shields_list_contains,flipper_left)
+config SHIELD_CARD_LEFT
+	def_bool $(shields_list_contains,card_left)
 
-config SHIELD_FLIPPER_RIGHT
-	def_bool $(shields_list_contains,flipper_right)
+config SHIELD_CARD_RIGHT
+	def_bool $(shields_list_contains,card_right)
