@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_CAR_LEFT
+if SHIELD_CARD_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "The Card"
