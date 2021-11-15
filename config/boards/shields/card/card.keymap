@@ -48,14 +48,14 @@
 	    key-positions = <5 6>;
             bindings = <&kp BKSP>;
         };
-        caps {
+        lshift {
             timeout-ms = <50>;
-	    key-positions = <22 23>;
-            bindings = <&kp CAPS>;
+	    key-positions = <16 17>;
+            bindings = <&kp LSHIFT>;
         };
         rshift {
             timeout-ms = <50>;
-	    key-positions = <16 17>;
+	    key-positions = <22 23>;
             bindings = <&sk RSHIFT>;
         };
         osl {
@@ -226,7 +226,7 @@
 
 		tri_layer {
 		bindings = <
-		&trans			&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp RC(TAB)	&kp LG(LBKT)  	&trans
+		&kp LC(LG(LS(N4)))	&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp RC(TAB)	&kp LG(LBKT)  	&trans
 		&kp TAB			&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 					&kp DOWN  		&hm RALT UP 	&kp RIGHT 	&kp LG(RBKT)
 		&td LG(GRAVE) GRAVE 	&mkp RCLK  		&mwh SCROLL_UP	&mwh SCROLL_DOWN 					&kp PG_DN  		&kp PG_UP  	&trans		&kp LSHIFT 	   
 								 					&to 0 		&kp RGUI 
