@@ -31,7 +31,7 @@
         combo_bksc {
             timeout-ms = <20>;
             key-positions = <21 22>;
-            bindings = <&to 3>;
+            bindings = <&to 4>;
         };
         combo_ent {
             timeout-ms = <20>;
@@ -41,7 +41,7 @@
         combo_1 {
             timeout-ms = <50>;
 	    key-positions = <24 25>;
-            bindings = <&to 1>;
+            bindings = <&to 2>;
         };
         combo_3 {
             timeout-ms = <50>;
@@ -61,7 +61,7 @@
         osl {
             timeout-ms = <50>;
 	    key-positions = <4 6>;
-            bindings = <&sl 5>;
+            bindings = <&sl 6>;
         };
         g {
             timeout-ms = <10>;
@@ -174,6 +174,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        hml: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&sl>;
+        };
         hs: homerow_shifts {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_SHIFTS";
@@ -197,12 +206,20 @@
         keymap {
                 compatible = "zmk,keymap";
                 
-       		default_layer {
+       		alpha1 {
 		bindings = <
 		&trans		&kp C 	   	&kp L 		&kp M						&kp F 		&kp U    		&kp Z		&trans 
-		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 			 	&hm RGUI N    	&hm RALT K    		&hm RCTL A 	&kp O
+		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 			 	&hm RGUI N    	&hml RALT 1    		&hm RCTL A 	&kp O
 		&kp Q	 	&kp V 		&kp W 		&kp D 						&kp H  		&kp Y 			&kp DOT		&kp X
           									&mt LC(LS(LALT)) SPC 	&kp E
+		>;
+		};
+       		alpha2 {
+		bindings = <
+		&trans		&trans 	   	&trans 		&trans						&trans 		&trans    		&trans		&trans 
+		&trans 		&trans  	&kp L 		&kp G 	 			 		&kp P    	&kp K    		&kp U	  	&kp Z
+		&trans	 	&kp C 		&kp M 		&kp J 						&kp B  		&kp F 			&trans		&trans
+          									&mt LC(LS(LALT)) SPC 	&trans
 		>;
 		};
 
