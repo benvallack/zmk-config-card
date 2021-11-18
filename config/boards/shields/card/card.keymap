@@ -217,7 +217,7 @@
        		alpha2 {
 		bindings = <
 		&trans		&trans 	   	&trans 		&trans						&trans 		&trans    		&trans		&trans 
-		&trans 		&kp L  		&kp T 		&kp G 	 			 		&kp P    	&kp F    		&kp U	  	&kp Z
+		&trans 		&kp L  		&kp R 		&kp G 	 			 		&kp P    	&kp F    		&kp U	  	&kp Z
 		&trans	 	&kp C 		&kp M 		&kp J 						&kp B  		&trans			&trans		&trans
           									&mt LC(LS(LALT)) SPC 	&trans
 		>;
