@@ -168,20 +168,20 @@
 		>;
 		};
 		
-       		left_layer {
+       		sym {
 		bindings = <
-		&trans			&kp ATSN   	&kp LS(N3) 			&kp DLLR    							&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&trans 
-		&kp TAB    		&hm LCTL EQUAL  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))   				 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
-		&hs LSHIFT TILDE	&kp LA(N3) 	&kp LA(LBKT)			&kp LA(LS(LBKT))  			 		 	&kp LPRN 	&kp RPRN 	&kp RBKT  	&kp LSHIFT
+		&trans			&kp LA(N3)   	&kp LS(N3) 			&kp DLLR    							&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&trans 
+		&kp TAB    		&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))   				 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
+		&trans			&trans  	&trans				&trans  				 		 	&trans 		&trans 		&trans  	&trans
 															&to 0 		&to 3 
 		>;
 		};
 
-		right_layer {
+		num {
 		bindings = <
-		&trans	&kp C_PP 	&kp C_PREV  	&kp C_NEXT  					&kp N7 		&kp N8 	&kp N9 		&trans 
-		&kp TAB	&trans   	&kp C_VOL_DN	&hm LGUI C_VOL_UP				&hm RGUI N4	&kp N5 	&kp N6   	&kp EQUAL
-		&to 4  	&trans 		&trans	  	&trans 						&kp N1 		&kp N2 	&kp N3  	&kp DOT 
+		&kp SLASH	&kp STAR 	&kp DOT  	&kp N0 				&kp N1 		&kp N2 	&kp N3 		&kp N4 
+		&kp PLUS	&kp MINUS   	&kp EQUAL	&hm LGUI N5			&hm RGUI N6	&kp N7 	&kp N8   	&kp N9
+		&trans  	&trans 		&trans	  	&trans 				&trans 		&trans 	&trans  	&trans 
 					  					&to 0 	&kp RGUI
 		>;
 		};
@@ -206,8 +206,8 @@
 
 		os {
 		bindings = <
-		&trans		&kp ATSN	&kp LA(LBKT)			&kp LA(LS(LBKT))				&kp SEMI	&trans 		&trans	 	&kp LS(MINUS)
-		&kp TAB  	&kp QMARK 	&kp LA(RBKT)      		&kp LA(LS(RBKT))  				&kp AMPS	&kp STAR	&trans		&kp MINUS 
+		&kp STAR	&kp ATSN	&kp LA(LBKT)			&kp LA(LS(LBKT))				&kp SEMI	&kp LPRN	&kp RPRN 	&kp LS(MINUS)
+		&kp TAB  	&kp QMARK 	&kp LA(RBKT)      		&kp LA(LS(RBKT))  				&kp AMPS	&kp LBKT	&kp RBKT	&kp MINUS 
 		&trans 		&trans 		&trans  			&trans 						&trans 		&trans 		&trans 		&trans   
 
 
