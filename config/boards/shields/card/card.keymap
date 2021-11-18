@@ -29,7 +29,7 @@
             bindings = <&kp ESC>;
         };
         combo_bksc {
-            timeout-ms = <20>;
+            timeout-ms = <10>;
             key-positions = <21 22>;
             bindings = <&to 4>;
         };
@@ -207,10 +207,10 @@
 		};
        		alpha2 {
 		bindings = <
-		&trans 		&kp V 		&trans 		&kp M	 			 		&kp F    	&trans    		&kp Z	  	&trans 
-		&kp Q	 	&kp J 		&kp P		&kp K 						&kp B 		&trans			&kp X		&trans
+		&kp SLASH 	&kp V 		&kp EXCL	&kp M	 			 		&kp F    	&kp COLON    		&kp Z	  	&kp SQT 
+		&kp Q	 	&kp J 		&kp P		&kp K 						&kp B 		&kp COMMA		&kp X		&kp DQT
 		&trans	 	&trans 		&trans 		&trans 						&trans 		&trans 			&trans		&trans
-          									&mt LC(LS(LALT)) SPC 	&kp DOT
+          									&sk LSHIFT 	&kp DOT
 		>;
 		};
 
@@ -252,9 +252,11 @@
 
 		os {
 		bindings = <
-		&trans		&kp ATSN	&kp EXCL 			&kp AMPS					&kp SEMI	&kp COLON	&kp COMMA 	&trans
-		&kp TAB  	&kp QMARK 	&kp LA(RBKT)      		&kp LA(LS(RBKT))  				&kp LS(MINUS)	&kp STAR	&trans		&kp MINUS 
-		&trans 		&kp SLASH 	&kp LA(LBKT)			&kp LA(LS(LBKT))  				&trans  	&trans  	&trans 		&trans   
+		&trans		&kp ATSN	&kp LA(LBKT)			&kp LA(LS(LBKT))				&kp SEMI	&trans 		&trans	 	&kp LS(MINUS)
+		&kp TAB  	&kp QMARK 	&kp LA(RBKT)      		&kp LA(LS(RBKT))  				&kp AMPS	&kp STAR	&trans		&kp MINUS 
+		&trans 		&trans 		&trans  			&trans 						&trans 		&trans 		&trans 		&trans   
+
+
 				 									&to 0 		&to 2 
 
 		>;
