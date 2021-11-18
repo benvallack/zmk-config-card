@@ -48,56 +48,10 @@
 	    key-positions = <5 6>;
             bindings = <&kp BKSP>;
         };
-        lshift {
-            timeout-ms = <50>;
-	    key-positions = <16 17>;
-            bindings = <&sk LSHIFT>;
-        };
-        rshift {
-            timeout-ms = <50>;
-	    key-positions = <22 23>;
-            bindings = <&sk RSHIFT>;
-        };
         osl {
             timeout-ms = <50>;
 	    key-positions = <4 6>;
             bindings = <&sl 6>;
-        };
-        g {
-            timeout-ms = <10>;
-	    key-positions = <10 11>;
-            bindings = <&kp G>;
-	    layers = <0>; 
-        };
-        j {
-            timeout-ms = <20>;
-	    key-positions = <18 19>;
-            bindings = <&kp J>;
-	    layers = <0>; 
-        };
-        p {
-            timeout-ms = <20>;
-	    key-positions = <12	13>;
-            bindings = <&kp P>;
-	    layers = <0>; 
-        };
-        b {
-            timeout-ms = <20>;
-	    key-positions = <20	21>;
-            bindings = <&kp B>;
-	    layers = <0>; 
-        };
-        sqt {
-            timeout-ms = <20>;
-	    key-positions = <10 11>;
-            bindings = <&kp SQT>;
-	    layers = <2 6>; 
-        };
-	dqt {
-            timeout-ms = <20>;
-	    key-positions = <18 19>;
-            bindings = <&kp DQT>;
-	    layers = <2 6>; 
         };
         bslh {
             timeout-ms = <20>;
@@ -213,7 +167,7 @@
           									&sk LSHIFT 	&kp DOT
 		>;
 		};
-
+		
        		left_layer {
 		bindings = <
 		&trans			&kp ATSN   	&kp LS(N3) 			&kp DLLR    							&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&trans 
