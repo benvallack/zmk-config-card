@@ -28,7 +28,7 @@
             key-positions = <17 18>;
             bindings = <&kp ESC>;
         };
-        combo_bksc {
+        combo_4  {
             timeout-ms = <10>;
             key-positions = <21 22>;
             bindings = <&to 4>;
@@ -43,8 +43,8 @@
 	    key-positions = <1 2>;
             bindings = <&to 2>;
         };
-        combo_3 {
-            timeout-ms = <50>;
+        combo_bks {
+            timeout-ms = <10>;
 	    key-positions = <5 6>;
             bindings = <&kp BKSP>;
         };
