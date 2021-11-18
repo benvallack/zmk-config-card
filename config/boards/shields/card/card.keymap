@@ -174,15 +174,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        hml: homerow_mods_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_L";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&sl>;
-        };
         hs: homerow_shifts {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_SHIFTS";
@@ -209,17 +200,17 @@
        		alpha1 {
 		bindings = <
 		&trans		&kp C 	   	&kp L 		&kp M						&kp F 		&kp U    		&kp Z		&trans 
-		&kp I 		&hm LCTL S 	&hml LALT 1	&hm LGUI T 	 			 	&hm RGUI N    	&hm RALT K    		&hm RCTL A 	&kp O
+		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 			 	&hm RGUI N    	&hm RALT K    		&hm RCTL A 	&kp O
 		&kp Q	 	&kp V 		&kp W 		&kp D 						&kp H  		&kp Y 			&kp DOT		&kp X
-          									&mt LC(LS(LALT)) SPC 	&kp E
+          									&mt LC(LS(LALT)) SPC 	&sl 1
 		>;
 		};
        		alpha2 {
 		bindings = <
 		&trans		&trans 	   	&trans 		&trans						&trans 		&trans    		&trans		&trans 
-		&trans 		&kp L  		&kp R 		&kp G 	 			 		&kp P    	&kp F    		&kp U	  	&kp Z
-		&trans	 	&kp C 		&kp M 		&kp J 						&kp B  		&trans			&trans		&trans
-          									&mt LC(LS(LALT)) SPC 	&trans
+		&trans 		&kp C  		&kp L 		&kp M 	 			 		&kp F    	&kp U    		&kp Z	  	&trans 
+		&trans	 	&trans 		&kp G 		&kp J 						&kp B  		&kp P			&trans		&trans
+          									&mt LC(LS(LALT)) SPC 	&kp E
 		>;
 		};
 
