@@ -91,74 +91,74 @@
             timeout-ms = <20>;
 	    key-positions = <10 11>;
             bindings = <&kp SQT>;
-	    layers = <1 5>; 
+	    layers = <2 6>; 
         };
 	dqt {
             timeout-ms = <20>;
 	    key-positions = <18 19>;
             bindings = <&kp DQT>;
-	    layers = <1 5>; 
+	    layers = <2 6>; 
         };
         bslh {
             timeout-ms = <20>;
 	    key-positions = <12 13>;
             bindings = <&kp BSLH>;
-	    layers = <1>; 
+	    layers = <2>; 
         };
         lbkt {
             timeout-ms = <20>;
 	    key-positions = <20 21>;
             bindings = <&kp LBKT>;
-	    layers = <1>; 
+	    layers = <2>; 
         };
         
         plus {
             timeout-ms = <20>;
 	    key-positions = <10 11>;
             bindings = <&kp LS(EQUAL)>; 
-	    layers = <2>; 
+	    layers = <3>; 
         };
 	prcnt {
             timeout-ms = <21>;
 	    key-positions = <18 19>;
             bindings = <&kp PRCNT>;
-	    layers = <2>; 
+	    layers = <3>; 
         };
         minus {
             timeout-ms = <20>;
 	    key-positions = <12	13>;
             bindings = <&kp MINUS>;
-	    layers = <2>; 
+	    layers = <3>; 
         };
         n0 {
             timeout-ms = <20>;
 	    key-positions = <20 21>;
             bindings = <&kp N0>;
-	    layers = <2>; 
+	    layers = <3>; 
         };
         lalt {
             timeout-ms = <20>;
 	    key-positions = <10 11>;
             bindings = <&kp LALT>; 
-	    layers = <3>; 
+	    layers = <4>; 
         };
 	del {
             timeout-ms = <20>;
 	    key-positions = <18 19>;
             bindings = <&kp DEL>;
-	    layers = <3>; 
+	    layers = <4>; 
         };
         left {
             timeout-ms = <20>;
 	    key-positions = <12	13>;
             bindings = <&kp LEFT>;
-	    layers = <3>;
+	    layers = <4>;
         };
         lclk {
             timeout-ms = <20>;
 	    key-positions = <20	21>;
             bindings = <&mkp LCLK>;
-	    layers = <3>;
+	    layers = <4>;
         };
 
 
