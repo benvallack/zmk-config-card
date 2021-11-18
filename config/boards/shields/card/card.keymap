@@ -199,17 +199,17 @@
                 
        		alpha1 {
 		bindings = <
-		&kp Y		&kp C 	   	&kp L 		&kp M						&kp F 		&kp U    		&kp Z		&trans 
-		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 			 	&hm RGUI N    	&hm RALT E    		&hm RCTL A 	&kp O
-		&kp Q	 	&kp V 		&kp W 		&kp D 						&kp H  		&kp K 			&kp Y		&kp X
+		&kp Y		&kp L 	   	&kp G 		&kp D						&kp H 		&kp U    		&kp O		&kp W 
+		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 			 	&hm RGUI N    	&hm RALT E    		&hm RCTL A 	&kp C
+		&trans	 	&trans 		&trans 		&trans 						&trans 		&trans 			&trans		&trans
           									&mt LC(LS(LALT)) SPC 	&sl 1
 		>;
 		};
        		alpha2 {
 		bindings = <
-		&trans		&trans 	   	&trans 		&trans						&trans 		&trans    		&trans		&trans 
-		&trans 		&kp C  		&kp L 		&kp M 	 			 		&kp F    	&kp U    		&kp Z	  	&trans 
-		&trans	 	&trans 		&kp G 		&kp J 						&kp B  		&kp P			&trans		&trans
+		&trans 		&kp V 		&trans 		&kp M	 			 		&kp F    	&trans    		&kp Z	  	&trans 
+		&kp Q	 	&kp J 		&kp P		&kp K 						&kp B 		&trans			&kp X		&trans
+		&trans	 	&trans 		&trans 		&trans 						&trans 		&trans 			&trans		&trans
           									&mt LC(LS(LALT)) SPC 	&kp DOT
 		>;
 		};
