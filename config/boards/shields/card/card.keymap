@@ -199,9 +199,9 @@
                 
        		alpha1 {
 		bindings = <
-		&trans		&kp C 	   	&kp L 		&kp M						&kp F 		&kp U    		&kp Z		&trans 
-		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 			 	&hm RGUI N    	&hm RALT K    		&hm RCTL A 	&kp O
-		&kp Q	 	&kp V 		&kp W 		&kp D 						&kp H  		&kp Y 			&kp DOT		&kp X
+		&kp Y		&kp C 	   	&kp L 		&kp M						&kp F 		&kp U    		&kp Z		&trans 
+		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 			 	&hm RGUI N    	&hm RALT E    		&hm RCTL A 	&kp O
+		&kp Q	 	&kp V 		&kp W 		&kp D 						&kp H  		&kp K 			&kp Y		&kp X
           									&mt LC(LS(LALT)) SPC 	&sl 1
 		>;
 		};
@@ -210,7 +210,7 @@
 		&trans		&trans 	   	&trans 		&trans						&trans 		&trans    		&trans		&trans 
 		&trans 		&kp C  		&kp L 		&kp M 	 			 		&kp F    	&kp U    		&kp Z	  	&trans 
 		&trans	 	&trans 		&kp G 		&kp J 						&kp B  		&kp P			&trans		&trans
-          									&mt LC(LS(LALT)) SPC 	&kp E
+          									&mt LC(LS(LALT)) SPC 	&kp DOT
 		>;
 		};
 
