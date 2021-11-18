@@ -40,7 +40,7 @@
         };
         combo_1 {
             timeout-ms = <50>;
-	    key-positions = <24 25>;
+	    key-positions = <1 2>;
             bindings = <&to 2>;
         };
         combo_3 {
