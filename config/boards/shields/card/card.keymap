@@ -79,15 +79,9 @@
             bindings = <&kp DEL>;
 	    layers = <4>; 
         };
-        left {
-            timeout-ms = <20>;
-	    key-positions = <12	13>;
-            bindings = <&kp LEFT>;
-	    layers = <4>;
-        };
         lclk {
             timeout-ms = <20>;
-	    key-positions = <20	21>;
+	    key-positions = <12	13>;
             bindings = <&mkp LCLK>;
 	    layers = <4>;
         };
