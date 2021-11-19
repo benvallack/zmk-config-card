@@ -105,12 +105,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        hs: homerow_shifts {
+        ls: layer_shifts {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_SHIFTS";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick_tap_ms = <0>;
+	    retro-tap;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -150,16 +151,16 @@
 		&kp PRCNT		&kp LA(N3)   	&kp LS(N3) 			&kp DLLR    							&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&trans 
 		&kp TAB    		&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))   				 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
 		&trans			&trans  	&trans				&trans  				 		 	&trans 		&trans 		&trans  	&trans
-															&to 0 		&to 3 
+															&sl LSHIFT 0 		&to 3 
 		>;
 		};
 
 		num {
 		bindings = <
 		&kp SLASH	&kp STAR 	&kp DOT  	&kp N0 				&kp N1 		&kp N2 	&kp N3 		&kp N4 
-		&kp PLUS	&kp MINUS   	&kp EQUAL	&hm LGUI N5			&hm RGUI N6	&kp N7 	&kp N8   	&kp N9
+		&kp MINUS	&kp PLUS   	&kp EQUAL	&hm LGUI N5			&hm RGUI N6	&kp N8   	&kp N9
 		&trans  	&trans 		&trans	  	&trans 				&trans 		&trans 	&trans  	&trans 
-					  					&to 0 	&kp RGUI
+					  					&sl LSHIFT 0 	&kp RGUI
 		>;
 		};
 
@@ -168,7 +169,7 @@
 		&trans			&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp RC(TAB)	&kp LG(LBKT)  		&trans
 		&kp TAB			&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 					&kp DOWN  		&hm RALT UP 	&kp RIGHT 		&kp LG(RBKT)
 		&td LG(GRAVE) GRAVE 	&mkp RCLK  		&mwh SCROLL_UP	&mwh SCROLL_DOWN 					&kp PG_DN  		&kp PG_UP  	&kp LC(LG(LS(N4)))	&kp LSHIFT 	   
-								 					&to 0 		&kp RGUI 
+								 					&sl LSHIFT 0 		&kp RGUI 
 		>;
 		};
 
