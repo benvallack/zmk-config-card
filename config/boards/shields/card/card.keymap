@@ -161,7 +161,7 @@
 		sys {
 		bindings = <
 		&kp PG_DN		&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp UP		&kp RC(TAB)		&kp LG(LBKT)  		
-		&kp PG_UP		&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 					&hm RGUI UP  		&hm RALT DOWN 	&kp RIGHT 		&kp LG(RBKT)
+		&kp PG_UP		&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 					&hm RGUI LEFT  		&hm RALT DOWN 	&kp RIGHT 		&kp LG(RBKT)
 		&trans 			&trans  		&trans		&sr LSHIFT 0 						&kp RGUI		&trans 		&trans			&trans 	   
 								 		&trans	 						&trans
 		>;
