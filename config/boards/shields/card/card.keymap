@@ -105,7 +105,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        sl: layer_shifts {
+        sr: layer_shifts {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_SHIFTS";
             #binding-cells = <2>;
@@ -131,27 +131,27 @@
                 
        		alpha1 {
 		bindings = <
-		&kp Y		&kp L 	   	&kp G 		&kp D						&kp H 		&kp U    		&kp O		&kp W 
-		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 			 	&hm RGUI N    	&hm RALT E    		&hm RCTL A 	&kp C
-		&trans	 	&trans 		&trans 		&trans 						&trans 		&trans 			&trans		&trans
-          									&mt LC(LS(LALT)) SPC 	&sl 1
+		&kp Y		&kp L 	   	&kp G 		&kp D			&kp H 		&kp U    		&kp O		&kp W 
+		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 	&hm RGUI N    	&hm RALT E    		&hm RCTL A 	&kp C
+		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&sl 1		&trans 			&trans		&trans
+								&trans	 		&trans
 		>;
 		};
        		alpha2 {
 		bindings = <
-		&kp SLASH 	&kp V 		&kp EXCL	&kp M	 			 		&kp F    	&kp COLON    		&kp Z	  	&kp SQT 
-		&kp Q	 	&kp J 		&kp P		&kp K 						&kp B 		&kp COMMA		&kp X		&kp DQT
-		&trans	 	&trans 		&trans 		&trans 						&trans 		&trans 			&trans		&trans
-          									&sk LSHIFT 	&kp DOT
+		&kp SLASH 	&kp V 		&kp EXCL	&kp M	 	 	&kp F    	&kp COLON    	&kp Z	  	&kp SQT 
+		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp COMMA	&kp X		&kp DQT
+		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp DOT		&trans		&trans		&trans
+								&trans	 		&trans
 		>;
 		};
 		
        		sym {
 		bindings = <
-		&kp TAB 		&kp LA(N3)   	&kp LS(N3) 			&kp DLLR    							&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&kp PRCNT 
-		&td LG(GRAVE) GRAVE 	&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))   				 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
-		&trans			&trans  	&trans				&trans  				 		 	&trans 		&trans 		&trans  	&trans
-															&sl LSHIFT 0 		&to 3 
+		&kp TAB 		&kp LA(N3)   	&kp LS(N3) 			&kp DLLR    			&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&kp PRCNT 
+		&td LG(GRAVE) GRAVE 	&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT) 	 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
+		&trans			&trans  	&trans				&sr LSHIFT 0 			&to 3		&trans 		&trans  	&trans
+								 			&trans		 		&trans
 		>;
 		};
 
@@ -159,8 +159,8 @@
 		bindings = <
 		&kp SLASH	&kp STAR 	&kp DOT  	&kp N0 				&kp N1 		&kp N2 	&kp N3 		&kp N4 
 		&kp MINUS	&kp PLUS   	&kp EQUAL	&hm LGUI N5			&hm RGUI N6	&kp N7 	&kp N8   	&kp N9
-		&trans  	&trans 		&trans	  	&trans 				&trans 		&trans 	&trans  	&trans 
-					  					&sl LSHIFT 0 	&kp RGUI
+		&trans  	&trans 		&trans		&sr LSHIFT 0 			&kp RGUI	&trans 	&trans  	&trans 
+								&trans	 		 	&trans
 		>;
 		};
 
@@ -168,8 +168,8 @@
 		bindings = <
 		&kp PG_DN		&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp UP		&kp RC(TAB)		&kp LG(LBKT)  		
 		&kp PG_UP		&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 					&hm RGUI UP  		&hm RALT DOWN 	&kp RIGHT 		&kp LG(RBKT)
-		&trans 			&trans  		&trans		&trans 							&trans  		&trans 		&kp LC(LG(LS(N4)))	&kp LSHIFT 	   
-								 					&sl LSHIFT 0 		&kp RGUI 
+		&trans 			&trans  		&trans		&sr LSHIFT 0 						&kp RGUI		&trans 		&kp LC(LG(LS(N4)))	&kp LSHIFT 	   
+								 		&trans	 						&trans
 		>;
 		};
 
