@@ -105,7 +105,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        ls: layer_shifts {
+        sl: layer_shifts {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_SHIFTS";
             #binding-cells = <2>;
@@ -113,7 +113,7 @@
             quick_tap_ms = <0>;
 	    retro-tap;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp>, <&to>;
         };
 	td: tapdance {
             compatible = "zmk,behavior-hold-tap";
