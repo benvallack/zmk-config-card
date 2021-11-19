@@ -25,12 +25,12 @@
         compatible = "zmk,combos";
         combo_esc { 
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <9 10>;
             bindings = <&kp ESC>;
         };
         combo_4  {
             timeout-ms = <10>;
-            key-positions = <21 22>;
+            key-positions = <13 14>;
             bindings = <&to 4>;
         };
         combo_ent {
@@ -149,7 +149,7 @@
        		sym {
 		bindings = <
 		&kp TAB 		&kp LA(N3)   	&kp LS(N3) 			&kp DLLR    			&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&kp PRCNT 
-		&td LG(GRAVE) GRAVE 	&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT) 	 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
+		&td LG(GRAVE) GRAVE 	&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT)) 	 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
 		&trans			&trans  	&trans				&sr LSHIFT 0 			&to 3		&trans 		&trans  	&trans
 								 			&trans		 		&trans
 		>;
@@ -168,7 +168,7 @@
 		bindings = <
 		&kp PG_DN		&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp UP		&kp RC(TAB)		&kp LG(LBKT)  		
 		&kp PG_UP		&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 					&hm RGUI UP  		&hm RALT DOWN 	&kp RIGHT 		&kp LG(RBKT)
-		&trans 			&trans  		&trans		&sr LSHIFT 0 						&kp RGUI		&trans 		&kp LC(LG(LS(N4)))	&kp LSHIFT 	   
+		&trans 			&trans  		&trans		&sr LSHIFT 0 						&kp RGUI		&trans 		&trans			&trans 	   
 								 		&trans	 						&trans
 		>;
 		};
@@ -187,8 +187,6 @@
 		&kp STAR	&kp ATSN	&kp LA(LBKT)			&kp LA(LS(LBKT))				&kp SEMI	&kp LPRN	&kp RPRN 	&kp LS(MINUS)
 		&kp TAB  	&kp QMARK 	&kp LA(RBKT)      		&kp LA(LS(RBKT))  				&kp AMPS	&kp LBKT	&kp RBKT	&kp MINUS 
 		&trans 		&trans 		&trans  			&trans 						&trans 		&trans 		&trans 		&trans   
-
-
 				 									&to 0 		&to 2 
 
 		>;
