@@ -37,7 +37,7 @@
             timeout-ms = <10>;
             key-positions = <13 14>;
             bindings = <&to 5>;
-	    layers = <3> 
+	    layers = <3>; 
         };
         combo_ent {
             timeout-ms = <20>;
