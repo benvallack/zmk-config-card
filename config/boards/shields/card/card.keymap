@@ -33,6 +33,12 @@
             key-positions = <13 14>;
             bindings = <&to 4>;
         };
+        combo_5  {
+            timeout-ms = <10>;
+            key-positions = <13 14>;
+            bindings = <&to 5>;
+	    layers = <3> 
+        };
         combo_ent {
             timeout-ms = <20>;
 	    key-positions = <14 15>;
@@ -169,9 +175,9 @@
 
 		bt {
 		bindings = <
-		&trans		&trans 		&trans 		&trans 			&trans 	&trans	&trans	&trans 
+		&trans		&bt BT_PRV	&bt BT_NXT	&trans 			&trans 	&trans	&trans	&bt BT_CLR 
 		&bootloader  	&trans 		&trans 		&trans 			&trans 	&trans 	&trans	&trans 
-		&bt BT_PRV	&bt BT_NXT 	&bt BT_CLR 	&trans 			&trans  &trans  &trans 	&trans   
+		&trans 	 	&trans 		&trans		&trans			&trans  &trans  &trans 	&trans   
 				 					&to 0 	&to 2 
 		>;
 		};
