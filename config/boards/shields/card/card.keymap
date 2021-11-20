@@ -33,12 +33,6 @@
             key-positions = <13 14>;
             bindings = <&to 4>;
         };
-        combo_5  {
-            timeout-ms = <10>;
-            key-positions = <13 14>;
-            bindings = <&to 5>;
-	    layers = <2>; 
-        };
         combo_ent {
             timeout-ms = <20>;
 	    key-positions = <14 15>;
@@ -49,6 +43,12 @@
 	    key-positions = <1 2>;
             bindings = <&to 2>;
 	    layers = <0>; 
+        };
+        combo_5  {
+            timeout-ms = <10>;
+            key-positions = <13 14>;
+            bindings = <&to 5>;
+	    layers = <2>; 
         };
         combo_bks {
             timeout-ms = <10>;
