@@ -52,7 +52,7 @@
 	    layers = <2>; 
         };
         combo_bks {
-            timeout-ms = <10>;
+            timeout-ms = <20>;
 	    key-positions = <5 6>;
             bindings = <&kp BKSP>;
         };
