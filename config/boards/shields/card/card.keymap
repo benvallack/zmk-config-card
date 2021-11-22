@@ -179,8 +179,8 @@
 		bindings = <
 		&trans		&bt BT_PRV	&bt BT_NXT	&trans 			&trans 	&trans	&trans	&bt BT_CLR 
 		&bootloader  	&trans 		&trans 		&trans 			&trans 	&trans 	&trans	&trans 
-		&trans 	 	&trans 		&trans		&trans			&trans  &trans  &trans 	&trans   
-				 					&to 0 	&to 2 
+		&trans 	 	&trans 		&trans		&to 0			&trans  &trans  &trans 	&trans   
+						 		&trans			&trans
 		>;
 		};
 
