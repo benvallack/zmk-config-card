@@ -159,9 +159,9 @@
 
 		num {
 		bindings = <
-		&kp SLASH	&kp STAR 	&kp DOT  	&kp N0 				&kp N1 		&kp N2 	&kp N3 		&kp N4 
-		&kp MINUS	&kp PLUS   	&kp EQUAL	&hm LGUI N5			&hm RGUI N6	&kp N7 	&kp N8   	&kp N9
-		&trans  	&trans 		&trans		&sr LSHIFT 0 			&kp RGUI	&trans 	&trans  	&trans 
+		&kp SLASH	&kp STAR 	&kp DOT  	&kp N0 				&kp N1 		&kp N2 		&kp N3 		&kp N4 
+		&kp MINUS	&hm LCTL PLUS  	&hm LALT EQUAL	&hm LGUI N5			&hm RGUI N6	&hm RALT N7 	&hm RCTL N8   	&kp N9
+		&trans  	&trans 		&trans		&sr LSHIFT 0 			&kp RGUI	&trans 		&trans  	&trans 
 								&trans	 		 	&trans
 		>;
 		};
