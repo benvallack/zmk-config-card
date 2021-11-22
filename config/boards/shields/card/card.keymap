@@ -150,10 +150,10 @@
 		
        		sym {
 		bindings = <
-		&kp TAB 		&kp LA(N3)   	&kp LS(N3) 			&kp DLLR    			&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&kp PRCNT 
-		&td LG(GRAVE) GRAVE 	&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT)) 	 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
-		&trans			&trans  	&trans				&sr LSHIFT 0 			&to 3		&trans 		&trans  	&trans
-								 			&trans		 		&trans
+		&kp TAB 	&kp LA(N3)   	&kp LS(N3) 			&kp DLLR    			&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&kp PRCNT 
+		&kp GRAVE 	&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT)) 	 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
+		&trans		&trans  	&trans				&sr LSHIFT 0 			&to 3		&trans 		&trans  	&trans
+							 			&trans		 		&trans
 		>;
 		};
 
@@ -168,8 +168,8 @@
 
 		sys {
 		bindings = <
-		&kp PG_DN		&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp UP		&kp RC(TAB)		&kp LG(LBKT)  		
-		&kp PG_UP		&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 					&hm RGUI LEFT  		&hm RALT DOWN 	&kp RIGHT 		&kp LG(RBKT)
+		&td LC(LG(LS(N4) PG_DN	&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp UP		&kp RC(TAB)		&kp LG(LBKT)  		
+		&td LG(GRAVE) PG_UP	&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 					&hm RGUI LEFT  		&hm RALT DOWN 	&kp RIGHT 		&kp LG(RBKT)
 		&trans 			&trans  		&trans		&sr LSHIFT 0 						&kp RGUI		&trans 		&trans			&trans 	   
 								 		&trans	 						&trans
 		>;
