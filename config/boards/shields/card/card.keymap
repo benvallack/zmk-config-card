@@ -128,12 +128,12 @@
         };
     };
 
-        keymap {
+       keymap {
                 compatible = "zmk,keymap";
                 
        		alpha1 {
 		bindings = <
-		&kp Y		&kp L 	   	&kp G 		&kp D			&kp H 		&kp U    		&kp O		&kp W 
+		&trans 		&kp L 	   	&kp G 		&kp D			&kp H 		&kp U    		&kp O		&trans  
 		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 	&hm RGUI N    	&hm RALT E    		&hm RCTL A 	&kp C
 		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&sl 1		&trans 			&trans		&trans
 								&trans	 		&trans
@@ -141,8 +141,8 @@
 		};
        		alpha2 {
 		bindings = <
-		&kp SLASH 	&kp V 		&kp EXCL	&kp M	 	 	&kp F    	&kp COLON    	&kp Z	  	&kp SQT 
-		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp COMMA	&kp X		&kp DQT
+		&trans 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&td SEMI COMMA  &kp Z	  	&trans 
+		&kp Q	 	&kp W 		&kp P		&kp K 			&kp B 		&kp J		&kp X		&td COLON EXCL
 		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp DOT		&trans		&trans		&trans
 								&trans	 		&trans
 		>;
