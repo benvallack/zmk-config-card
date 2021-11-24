@@ -171,7 +171,7 @@
 
 		num {
 		bindings = <
-		&trans		&kp SLASH  	&kp N0		&kp N1		 		&kp N2 		&kpN3 		&kp N4 		&trans
+		&trans		&kp SLASH  	&kp N0		&kp N1		 		&kp N2 		&kp N3 		&kp N4 		&trans
 		&kp MINUS	&hm LCTL PLUS 	&hm LALT N5	&hm LGUI N6			&hm RGUI N7	&hm RALT N8 	&hm RCTL N9   	&kp EQUAL
 		&trans  	&trans 		&trans		&sr LSHIFT 0 			&hm RGUI DOT	&trans 		&trans  	&trans 
 								&trans	 		 	&trans
