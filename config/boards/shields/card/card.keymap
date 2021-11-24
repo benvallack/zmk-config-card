@@ -153,8 +153,8 @@
 		};
        		alpha2 {
 		bindings = <
-		&trans 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&td SEMI COMMA  &kp Z	  	&trans 
-		&kp Q	 	&kp W 		&kp P		&kp K 			&kp B 		&kp J		&kp X		&td COLON EXCL
+		&trans 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp Y		&kp Z	  	&trans 
+		&kp Q	 	&kp W 		&kp P		&kp K 			&kp B 		&kp J		&kp X		&td COLON COMMA 
 		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp DOT		&trans		&trans		&trans
 								&trans	 		&trans
 		>;
