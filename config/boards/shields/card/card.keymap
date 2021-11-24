@@ -38,13 +38,13 @@
             timeout-ms = <15>;
             key-positions = <2 3>;
             bindings = <&kp SQT>;
-	    layers = <2 5>; 
+	    layers = <2 6>; 
         };
         combo_dqt  {
             timeout-ms = <10>;
             key-positions = <10 11>;
             bindings = <&kp DQT>;
-	    layers = <2 5>; 
+	    layers = <2 6>; 
         };
         combo_ent {
             timeout-ms = <20>;
