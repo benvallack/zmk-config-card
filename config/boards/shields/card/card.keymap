@@ -34,6 +34,18 @@
             bindings = <&to 4>;
 	    layers = <0>; 
         };
+        combo_sqt { 
+            timeout-ms = <15>;
+            key-positions = <2 3>;
+            bindings = <&kp SQT>;
+	    layers = <2 5>; 
+        };
+        combo_dqt  {
+            timeout-ms = <10>;
+            key-positions = <10 11>;
+            bindings = <&kp DQT>;
+	    layers = <2 5>; 
+        };
         combo_ent {
             timeout-ms = <20>;
 	    key-positions = <14 15>;
