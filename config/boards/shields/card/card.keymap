@@ -107,7 +107,7 @@
         };
         rclk {
             timeout-ms = <20>;
-	    key-positions = <13 14>;
+	    key-positions = <4 5>;
             bindings = <&mkp RCLK>;
 	    layers = <4>;
         };
