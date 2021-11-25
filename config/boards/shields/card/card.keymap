@@ -58,7 +58,7 @@
 	    layers = <0>; 
         };
         combo_5  {
-            timeout-ms = <30>;
+            timeout-ms = <10>;
             key-positions = <13 14>;
             bindings = <&to 5>;
 	    layers = <2>; 
