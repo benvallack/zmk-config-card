@@ -102,13 +102,13 @@
         lclk {
             timeout-ms = <20>;
 	    key-positions = <12	13>;
-            bindings = <&mkp lclk>;
+            bindings = <&mkp LCLK>;
 	    layers = <4>;
         };
         rclk {
             timeout-ms = <20>;
 	    key-positions = <13 14>;
-            bindings = <&mkp rclk>;
+            bindings = <&mkp RCLK>;
 	    layers = <4>;
         };
 
