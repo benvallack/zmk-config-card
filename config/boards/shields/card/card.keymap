@@ -135,16 +135,6 @@
             flavor = "balanced";
             bindings = <&kp>, <&to>;
         };
-        srs: sticky_layer_shifts {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_SHIFTS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
-	    retro-tap;
-            flavor = "balanced";
-            bindings = <&kp>, <&sl>;
-        };
 	td: tapdance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
@@ -162,8 +152,8 @@
        		alpha1 {
 		bindings = <
 		&trans 		&kp L 	   	&kp G 		&kp D			&kp H 		&kp U    		&kp O		&trans  
-		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 	&hm RGUI N    	&srs RALT 1   		&hm RCTL A 	&kp C
-		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&kp E		&trans 			&trans		&trans
+		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 	&hm RGUI N    	&hm RALT E   		&hm RCTL A 	&kp C
+		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&sl 1		&trans 			&trans		&trans
 								&trans	 		&trans
 		>;
 		};
