@@ -27,12 +27,13 @@
             timeout-ms = <15>;
             key-positions = <9 10>;
             bindings = <&kp ESC>;
+	    layers = <1>; 
         };
         combo_4  {
             timeout-ms = <10>;
             key-positions = <13 14>;
             bindings = <&to 4>;
-	    layers = <0>; 
+	    layers = <1>; 
         };
         combo_sqt { 
             timeout-ms = <15>;
@@ -50,6 +51,7 @@
             timeout-ms = <20>;
 	    key-positions = <14 15>;
             bindings = <&kp RET>;
+	    layers = <1>; 
         };
         combo_1 {
             timeout-ms = <50>;
@@ -67,11 +69,13 @@
             timeout-ms = <20>;
 	    key-positions = <5 6>;
             bindings = <&kp BKSP>;
+	    layers = <1>; 
         };
         osl {
             timeout-ms = <50>;
 	    key-positions = <4 6>;
             bindings = <&sl 6>;
+	    layers = <1>; 
         };
 
         bslh {
