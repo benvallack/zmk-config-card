@@ -27,7 +27,7 @@
             timeout-ms = <15>;
             key-positions = <9 10>;
             bindings = <&kp ESC>;
-	    layers = <1>; 
+	    layers = <1 2 3 4 6>; 
         };
         combo_4  {
             timeout-ms = <10>;
@@ -51,7 +51,7 @@
             timeout-ms = <20>;
 	    key-positions = <14 15>;
             bindings = <&kp RET>;
-	    layers = <1>; 
+	    layers = <1 2 3 4 6>; 
         };
         combo_1 {
             timeout-ms = <50>;
@@ -69,7 +69,7 @@
             timeout-ms = <20>;
 	    key-positions = <5 6>;
             bindings = <&kp BKSP>;
-	    layers = <1>; 
+	    layers = <1 2 3 4 6>; 
         };
         osl {
             timeout-ms = <50>;
