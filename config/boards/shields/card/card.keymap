@@ -25,18 +25,39 @@
         compatible = "zmk,combos";
         combo_esc { 
             timeout-ms = <15>;
-            key-positions = <9 10 24>;
+            key-positions = <9 10 19>;
             bindings = <&kp ESC>;
         };
         combo_bks {
             timeout-ms = <20>;
-	    key-positions = <4 5 6>;
+	    key-positions = <20 5 6>;
             bindings = <&kp BKSP>;
         };
-        combo_4  {
+        combo_ent {
+            timeout-ms = <20>;
+	    key-positions = <20 13 14>;
+            bindings = <&kp RET>;
+        };
+        combo_sys  {
             timeout-ms = <10>;
-            key-positions = <12 13 14>;
+            key-positions = <4 5 6>;
             bindings = <&to 4>;
+        };
+        combo_sym {
+            timeout-ms = <50>;
+	    key-positions = <9 10 11>;
+            bindings = <&to 2>;
+        };
+        combo_oneshot {
+            timeout-ms = <50>;
+	    key-positions = <12 13 14>;
+            bindings = <&sl 6>;
+        };
+        combo_bt  {
+            timeout-ms = <10>;
+            key-positions = <13 14>;
+            bindings = <&to 5>;
+	    layers = <2>; 
         };
         combo_sqt { 
             timeout-ms = <15>;
@@ -49,29 +70,6 @@
             key-positions = <10 11>;
             bindings = <&kp DQT>;
 	    layers = <2 6>; 
-        };
-        combo_ent {
-            timeout-ms = <20>;
-	    key-positions = <13 14 25>;
-            bindings = <&kp RET>;
-        };
-        combo_1 {
-            timeout-ms = <50>;
-	    key-positions = <1 2>;
-            bindings = <&to 2>;
-	    layers = <0>; 
-        };
-        combo_5  {
-            timeout-ms = <10>;
-            key-positions = <13 14>;
-            bindings = <&to 5>;
-	    layers = <2>; 
-        };
-        osl {
-            timeout-ms = <50>;
-	    key-positions = <4 6>;
-            bindings = <&sl 6>;
-	    layers = <1>; 
         };
 
         bslh {
