@@ -24,32 +24,37 @@
     combos {
         compatible = "zmk,combos";
         combo_esc { 
-            timeout-ms = <15>;
+            timeout-ms = <30>;
             key-positions = <9 10 19>;
             bindings = <&kp ESC>;
         };
         combo_bks {
-            timeout-ms = <20>;
+            timeout-ms = <30>;
 	    key-positions = <20 5 6>;
             bindings = <&kp BKSP>;
         };
         combo_ent {
-            timeout-ms = <20>;
+            timeout-ms = <30>;
 	    key-positions = <20 13 14>;
             bindings = <&kp RET>;
         };
         combo_sys  {
-            timeout-ms = <10>;
+            timeout-ms = <30>;
             key-positions = <4 5 6>;
             bindings = <&to 4>;
         };
         combo_sym {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
 	    key-positions = <9 10 11>;
             bindings = <&to 2>;
         };
+        combo_num {
+            timeout-ms = <30>;
+	    key-positions = <1 2 3>;
+            bindings = <&to 3>;
+        };
         combo_oneshot {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
 	    key-positions = <12 13 14>;
             bindings = <&sl 6>;
         };
@@ -168,7 +173,7 @@
 		bindings = <
 		&trans 		&kp LA(N3)   	&kp LS(N3) 			&kp DLLR    			&kp LS(COMMA)	&kp LS(DOT)	&kp CARET 	&trans
 		&kp GRAVE	&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT)) 	 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
-		&trans		&trans  	&trans				&sr LSHIFT 0 			&to 3		&trans 		&trans  	&trans
+		&trans		&trans  	&trans				&sr LSHIFT 0 			&trans		&trans 		&trans  	&trans
 							 			&trans		 		&trans
 		>;
 		};
