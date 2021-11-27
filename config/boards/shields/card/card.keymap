@@ -25,15 +25,18 @@
         compatible = "zmk,combos";
         combo_esc { 
             timeout-ms = <15>;
-            key-positions = <9 10>;
+            key-positions = <9 10 22>;
             bindings = <&kp ESC>;
-	    layers = <1 2 3 4 6>; 
+        };
+        combo_bks {
+            timeout-ms = <20>;
+	    key-positions = <4 5 6>;
+            bindings = <&kp BKSP>;
         };
         combo_4  {
             timeout-ms = <10>;
-            key-positions = <13 14>;
+            key-positions = <12 13 14>;
             bindings = <&to 4>;
-	    layers = <1>; 
         };
         combo_sqt { 
             timeout-ms = <15>;
@@ -49,9 +52,8 @@
         };
         combo_ent {
             timeout-ms = <20>;
-	    key-positions = <14 15>;
+	    key-positions = <13 14 23>;
             bindings = <&kp RET>;
-	    layers = <1 2 3 4 6>; 
         };
         combo_1 {
             timeout-ms = <50>;
@@ -64,12 +66,6 @@
             key-positions = <13 14>;
             bindings = <&to 5>;
 	    layers = <2>; 
-        };
-        combo_bks {
-            timeout-ms = <20>;
-	    key-positions = <5 6>;
-            bindings = <&kp BKSP>;
-	    layers = <1 2 3 4 6>; 
         };
         osl {
             timeout-ms = <50>;
