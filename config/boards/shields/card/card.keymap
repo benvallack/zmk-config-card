@@ -172,7 +172,7 @@
 		bindings = <
 		&trans 		&hm LCTL LA(N3)   	&hm LALT LS(N3) 		&hm LGUI DLLR    	&hm RGUI LS(COMMA)	&hm RALT LS(DOT)	&hm RSHIFT CARET	&trans
 		&kp GRAVE	&kp TILDE  		&kp LA(RBKT)      		&hl 4 LA(LS(RBKT)) 	&hl 4 LBRC	  	&kp RBRC 		&kp PIPE	 	&trans
-		&trans		&trans  		&trans				&sr LSHIFT 0 		&trans			&trans 			&trans  		&trans
+		&trans		&trans  		&trans				&hm LSHIFT 0 		&trans			&trans 			&trans  		&trans
 							 				&trans		 	&trans
 		>;
 		};
