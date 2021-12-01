@@ -128,6 +128,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        sr: shift_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_LAYER";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&to>;
+        };
         hl: homerow_layers {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LAYERS";
@@ -172,7 +181,7 @@
 		bindings = <
 		&trans 		&hm LCTL LA(N3)   	&hm LALT LS(N3) 		&hm LGUI DLLR    	&hm RGUI LS(COMMA)	&hm RALT LS(DOT)	&hm RSHIFT CARET	&trans
 		&kp GRAVE	&kp TILDE  		&kp LA(RBKT)      		&hl 4 LA(LS(RBKT)) 	&hl 4 LBRC	  	&kp RBRC 		&kp PIPE	 	&trans
-		&trans		&trans  		&trans				&hm LSHIFT 0 		&trans			&trans 			&trans  		&trans
+		&trans		&trans  		&trans				&sr LSHIFT 0 		&trans			&trans 			&trans  		&trans
 							 				&trans		 	&trans
 		>;
 		};
@@ -181,7 +190,7 @@
 		bindings = <
 		&trans		&hm LCTL SLASH 	&hm LALT N0	&hm LGUI N1	 		&hm RGUI N2 	&hm RALT N3	&hm RCTL N4	&trans
 		&hl 3 MINUS	&hl 6 PLUS 	&hl 2 N5	&hl 4 N6			&hl 4 N7	&hl 2 N8	&hl 6 N9   	&hl 3 EQUAL
-		&trans  	&trans 		&trans		&hm LSHIFT 0 			&hm RGUI DOT	&trans 		&trans  	&trans 
+		&trans  	&trans 		&trans		&sr LSHIFT 0 			&hm RGUI DOT	&trans 		&trans  	&trans 
 								&trans	 		 	&trans
 		>;
 		};
@@ -190,7 +199,7 @@
 		bindings = <
 		&trans		 	&kp ESC		&td LG(C) LC(LS(TAB)) 	&td LG(V) RC(TAB)	&td LG(V) LG(C) 	&kp UP 		&kp BKSP 			&trans	
 		&td LG(GRAVE) TAB	&kp HOME	&kp END			&td LG(LBKT) LG(RBKT)	&hm RGUI LEFT  		&hm RALT DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
-		&trans 			&trans  	&trans			&hm LSHIFT 0 		&kp RGUI		&trans 		&trans				&trans 	   
+		&trans 			&trans  	&trans			&sr LSHIFT 0 		&kp RGUI		&trans 		&trans				&trans 	   
 								 		&trans	 		&trans
 		>;
 		};
