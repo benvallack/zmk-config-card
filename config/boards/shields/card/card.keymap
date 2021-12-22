@@ -76,6 +76,12 @@
             bindings = <&kp DEL>;
 	    layers = <4>; 
         };
+	capalpha2 {
+            timeout-ms = <20>;
+	    key-positions = <19 20>;
+            bindings = <&sl 7>;
+	    layers = <0 1>; 
+        };
         lclk {
             timeout-ms = <20>;
 	    key-positions = <12	13>;
@@ -190,11 +196,19 @@
 
 		sym2 {
 		bindings = <
-		&trans		&kp ATSN	&td LA(RBKT) LA(LBKT)	&td LA(LS(RBKT)) LA(LS(LBKT))		&kp LPRN	&kp RPRN 	&kp SEMI 	&trans
-		&kp STAR  	&kp PRCNT	&kp SQT       		&kp DQT   				&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
-		&trans 		&trans 		&trans  		&to 0					&to 6		&trans 		&trans 		&trans   
+		&trans		&kp ATSN	&td LA(RBKT) LA(LS(RBKT))	&td  LA(LBKT) LA(LS(LBKT))		&kp LPRN	&kp RPRN 	&kp SEMI 	&trans
+		&kp STAR  	&kp PRCNT	&kp SQT       			&kp DQT   				&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
+		&trans 		&trans 		&trans  			&to 0					&to 6		&trans 		&trans 		&trans   
 						 			&trans					&trans
 
+		>;
+		};
+       		alpha2cap {
+		bindings = <
+		&trans 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&kp COMMA	&kp LS(Z)	&trans 
+		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&td QMARK EXCL	&kp LS(X)	&kp LS(Y) 
+		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp DOT		&trans		&trans		&trans
+								&trans	 		&trans
 		>;
 		};
         
