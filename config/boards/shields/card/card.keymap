@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
         combo_game {
             timeout-ms = <30>;
-	    key-positions = <1 2 3 4 5 6>;
+	    key-positions = <2 3 4 5>;
             bindings = <&to 8>;
         };
         combo_caps {
