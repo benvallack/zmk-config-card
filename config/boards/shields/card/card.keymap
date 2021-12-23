@@ -23,6 +23,11 @@
 / { 
     combos {
         compatible = "zmk,combos";
+        combo_game {
+            timeout-ms = <30>;
+	    key-positions = <1 2 3 4 5 6>;
+            bindings = <&to 8>;
+        };
         combo_caps {
             timeout-ms = <30>;
 	    key-positions = <12 13 14>;
@@ -198,6 +203,14 @@
 		&trans 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&kp COMMA	&kp LS(Z)	&trans 
 		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&td QMARK EXCL	&kp LS(X)	&kp LS(Y) 
 		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp DOT		&trans		&trans		&trans
+								&trans	 		&trans
+		>;
+		};
+       		game {
+		bindings = <
+		&trans 		&kp L 		&kp G 		&kp D			&hm RGUI H 	&hm RALT U    		&hm RCTL O	&trans  
+		&kp I		&kp S		&kp R		&kp T 		 	&hl 4 N    	&hl 2 E   		&hl 6 A 	&hl 3 C
+		&trans	 	&trans 		&trans 		&kp SPC 	&sl 1		&trans 			&trans		&trans
 								&trans	 		&trans
 		>;
 		};
