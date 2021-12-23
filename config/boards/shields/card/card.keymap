@@ -46,7 +46,7 @@
             timeout-ms = <10>;
             key-positions = <13 14>;
             bindings = <&to 5>;
-	    layers = <SYM>; 
+	    layers = <SM1>; 
         };
         lalt {
             timeout-ms = <20>;
