@@ -18,76 +18,65 @@
      release-after-ms = <2000>;
      quick-release;
  };
-
-
+ 
+/* Layers */
+#define AL1 0
+#define GM 1
+#define AL2 2
+#define AL2U 8
+#define SM1 3
+#define SM2 4	
+#define NM1 5	
+#define SYS 6	
+#define BT 7	
 / { 
     combos {
         compatible = "zmk,combos";
         combo_game {
             timeout-ms = <30>;
 	    key-positions = <2 3 4 5>;
-            bindings = <&to 8>;
+            bindings = <&to GM>;
         };
         combo_caps {
             timeout-ms = <30>;
 	    key-positions = <12 13 14>;
             bindings = <&kp CAPS>;
         };
-        combo_sys  {
-            timeout-ms = <30>;
-            key-positions = <4 5 6>;
-            bindings = <&to 4>;
-        };
-        combo_sym {
-            timeout-ms = <30>;
-	    key-positions = <9 10 11>;
-            bindings = <&to 2>;
-        };
-        combo_num {
-            timeout-ms = <30>;
-	    key-positions = <1 2 3>;
-            bindings = <&to 3>;
-        };
-        combo_oneshot {
-            timeout-ms = <30>;
-	    key-positions = <12 13 14>;
-            bindings = <&sl 6>;
-        };
         combo_bt  {
             timeout-ms = <10>;
             key-positions = <13 14>;
             bindings = <&to 5>;
-	    layers = <2>; 
+	    layers = <SYM>; 
         };
         lalt {
             timeout-ms = <20>;
 	    key-positions = <10 11>;
             bindings = <&kp LALT>; 
-	    layers = <4>; 
+	    layers = <SYS>; 
         };
 	del {
             timeout-ms = <20>;
 	    key-positions = <18 19>;
             bindings = <&kp DEL>;
-	    layers = <4>; 
+	    layers = <SYS>; 
         };
 	capalpha2 {
             timeout-ms = <20>;
 	    key-positions = <19 20>;
-            bindings = <&sl 7>;
-	    layers = <0 1>; 
+            bindings = <&sl AL2U>;
+	    layers = <AL1 AL2>; 
         };
         lclk {
             timeout-ms = <20>;
 	    key-positions = <12	13>;
             bindings = <&mkp LCLK>;
-	    layers = <4>;
+	    layers = <SYS>;
         };
         rclk {
             timeout-ms = <20>;
 	    key-positions = <4 5>;
             bindings = <&mkp RCLK>;
-	    layers = <4>;
+	    layers = <SYS>;
         };
 
 
@@ -139,8 +128,16 @@
        		alpha1 {
 		bindings = <
 		&trans 		&hm LCTL L 	&hm LALT G 	&hm LGUI D		&hm RGUI H 	&hm RALT U    		&hm RCTL O	&trans  
-		&hl 3 I		&hl 6 S		&hl 2 R		&hl 4 T 	 	&hl 4 N    	&hl 2 E   		&hl 6 A 	&hl 3 C
-		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&sl 1		&trans 			&trans		&trans
+		&hl NUM I	&hl SYM2 S	&hl SYM R	&hl SYS T 	 	&hl SYS N    	&hl SYM E   		&hl SYM2 A 	&hl NUM C
+		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&sl AL2		&trans 			&trans		&trans
+								&trans	 		&trans
+		>;
+		};
+       		game {
+		bindings = <
+		&trans 		&kp L 		&kp G 		&kp D			&hm RGUI H 	&hm RALT U    		&hm RCTL O	&trans  
+		&kp I		&kp S		&kp R		&kp T 		 	&hl SYS N    	&hl SYM E   		&hl SYM2  A 	&hl NUM C
+		&trans	 	&trans 		&trans 		&kp SPC 		&sl AL2		&trans 			&trans		&trans
 								&trans	 		&trans
 		>;
 		};
@@ -156,17 +153,26 @@
        		sym1 {
 		bindings = <
 		&trans 		&hm LCTL LA(N3)   	&hm LALT LS(N3) 		&hm LGUI DLLR    	&hm RGUI LS(COMMA)	&hm RALT LS(DOT)	&hm RSHIFT CARET	&trans
-		&kp GRAVE	&kp TILDE  		&kp MINUS	      		&hl 4 BSLH	 	&kp LBKT		&kp RBKT	 	&kp PIPE	 	&kp SLASH
+		&kp GRAVE	&kp TILDE  		&kp MINUS	      		&hl SYS BSLH	 	&kp LBKT		&kp RBKT	 	&kp PIPE	 	&kp SLASH
 		&trans		&trans  		&trans				&sr LSHIFT 0 		&to 2			&trans 			&trans  		&trans
 							 				&trans		 	&trans
+		>;
+		};
+		sym2 {
+		bindings = <
+		&trans		&kp ATSN	&td LA(RBKT) LA(LS(RBKT))	&td  LA(LBKT) LA(LS(LBKT))		&kp LPRN	&kp RPRN 	&kp SEMI 	&trans
+		&kp STAR  	&kp PRCNT	&kp SQT       			&kp DQT   				&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
+		&trans 		&trans 		&trans  			&to AL1					&trans 		&trans 		&trans 		&trans   
+						 			&trans					&trans
+
 		>;
 		};
 
 		num {
 		bindings = <
 		&trans		&hm LCTL DOT 	&hm LALT N0	&hm LGUI N1	 		&hm RGUI N2 	&hm RALT N3	&hm RCTL N4	&trans
-		&kp MINUS	&hl 6 PLUS 	&hl 2 N5	&hl 4 N6			&hl 4 N7	&hl 2 N8	&hl 6 N9   	&kp EQUAL
-		&trans  	&trans 		&trans		&sr LSHIFT 0 			&to 3		&trans 		&trans  	&trans 
+		&kp MINUS	&hl SYM2 PLUS 	&hl SYM N5	&hl SYS N6			&hl SYS N7	&hl SYM N8	&hl SYM2 N9   	&kp EQUAL
+		&trans  	&trans 		&trans		&sr LSHIFT AL1 			&trans 		&trans 		&trans  	&trans 
 								&trans	 		 	&trans
 		>;
 		};
@@ -175,7 +181,7 @@
 		bindings = <
 		&trans		 	&kp ESC		&kp LC(LS(TAB)) 	&kp  RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&kp BKSP 			&trans	
 		&td LG(GRAVE) TAB	&td HOME HOME	&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&hm RALT DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
-		&trans 			&trans  	&trans			&sr LSHIFT 0 		&kp RGUI		&trans 		&trans				&trans 	   
+		&trans 			&trans  	&trans			&sr LSHIFT AL1 		&kp RGUI		&trans 		&trans				&trans 	   
 								 		&trans	 		&trans
 		>;
 		};
@@ -184,33 +190,16 @@
 		bindings = <
 		&trans		&bt BT_PRV	&bt BT_NXT	&trans 			&trans 	&trans	&trans	&trans
 		&bootloader  	&trans 		&trans 		&trans 			&trans 	&trans 	&trans	&bt BT_CLR
-		&trans 	 	&trans 		&trans		&to 0			&trans  &trans  &trans 	&trans   
+		&trans 	 	&trans 		&trans		&to AL1			&trans  &trans  &trans 	&trans   
 						 		&trans			&trans
 		>;
 		};
 
-		sym2 {
-		bindings = <
-		&trans		&kp ATSN	&td LA(RBKT) LA(LS(RBKT))	&td  LA(LBKT) LA(LS(LBKT))		&kp LPRN	&kp RPRN 	&kp SEMI 	&trans
-		&kp STAR  	&kp PRCNT	&kp SQT       			&kp DQT   				&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
-		&trans 		&trans 		&trans  			&to 0					&to 6		&trans 		&trans 		&trans   
-						 			&trans					&trans
-
-		>;
-		};
        		alpha2cap {
 		bindings = <
 		&trans 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&kp COMMA	&kp LS(Z)	&trans 
 		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&td QMARK EXCL	&kp LS(X)	&kp LS(Y) 
 		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp DOT		&trans		&trans		&trans
-								&trans	 		&trans
-		>;
-		};
-       		game {
-		bindings = <
-		&trans 		&kp L 		&kp G 		&kp D			&hm RGUI H 	&hm RALT U    		&hm RCTL O	&trans  
-		&kp I		&kp S		&kp R		&kp T 		 	&hl 4 N    	&hl 2 E   		&hl 6 A 	&hl 3 C
-		&trans	 	&trans 		&trans 		&kp SPC 	&sl 1		&trans 			&trans		&trans
 								&trans	 		&trans
 		>;
 		};
