@@ -128,7 +128,7 @@
        		alpha1 {
 		bindings = <
 		&trans 		&hm LCTL L 	&hm LALT G 	&hm LGUI D		&hm RGUI H 	&hm RALT U    		&hm RCTL O	&trans  
-		&hl NUM I	&hl SM2 S	&hl SM1 R	&hl SYS T 	 	&hl SYS N    	&hl SM1 E   		&hl SM2 A 	&hl NUM C
+		&hl NM1 I	&hl SM2 S	&hl SM1 R	&hl SYS T 	 	&hl SYS N    	&hl SM1 E   		&hl SM2 A 	&hl NM1 C
 		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&sl AL2		&trans 			&trans		&trans
 								&trans	 		&trans
 		>;
@@ -136,7 +136,7 @@
        		game {
 		bindings = <
 		&trans 		&kp L 		&kp G 		&kp D			&hm RGUI H 	&hm RALT U    		&hm RCTL O	&trans  
-		&kp I		&kp S		&kp R		&kp T 		 	&hl SYS N    	&hl SM1 E   		&hl SM2  A 	&hl NUM C
+		&kp I		&kp S		&kp R		&kp T 		 	&hl SYS N    	&hl SM1 E   		&hl SM2  A 	&hl NM1 C
 		&trans	 	&trans 		&trans 		&kp SPC 		&sl AL2		&trans 			&trans		&trans
 								&trans	 		&trans
 		>;
