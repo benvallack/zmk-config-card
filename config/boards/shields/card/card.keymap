@@ -50,7 +50,7 @@
         combo_bt  {
             timeout-ms = <10>;
             key-positions = <13 14>;
-            bindings = <&to 5>;
+            bindings = <&to BT>;
 	    layers = <SM1>; 
         };
         lalt {
