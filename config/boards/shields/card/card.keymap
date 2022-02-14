@@ -59,12 +59,6 @@
             bindings = <&kp LALT>; 
 	    layers = <SYS>; 
         };
-	del {
-            timeout-ms = <20>;
-	    key-positions = <18 19>;
-            bindings = <&kp DEL>;
-	    layers = <SYS>; 
-        };
 	capalpha2 {
             timeout-ms = <20>;
 	    key-positions = <19 20>;
@@ -185,7 +179,7 @@
 		sys {
 		bindings = <
 		&trans		 	&kp ESC		&kp LC(LS(TAB)) 	&kp  RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&kp BKSP 			&trans	
-		&td LG(GRAVE) TAB	&td HOME HOME	&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&hm RALT DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
+		&td LG(GRAVE) TAB	&td HOME DEL	&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
 		&trans 			&trans  	&trans			&sr LSHIFT AL1 		&kp RGUI		&trans 		&trans				&trans 	   
 								 		&trans	 		&trans
 		>;
