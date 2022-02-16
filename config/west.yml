@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: krikun98
-      url-base: https://github.com/krikun98
+    - name: okke-formsma
+      url-base: https://github.com/okke-formsma
   projects:
     - name: zmk
-      remote: krikun98
-      revision: mouse-pr 
+      remote: okke-formsma
+      revision: macros
       import: app/west.yml
   self:
     path: config

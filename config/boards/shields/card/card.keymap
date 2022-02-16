@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
 
 
 &mt {
@@ -68,13 +67,13 @@
         lclk {
             timeout-ms = <20>;
 	    key-positions = <12	13>;
-            bindings = <&mkp LCLK>;
+            bindings = <&kp LC(LS(LALT(N1)))>;
 	    layers = <SYS>;
         };
         rclk {
             timeout-ms = <20>;
 	    key-positions = <4 5>;
-            bindings = <&mkp RCLK>;
+            bindings = <&kp LC(LS(LALT(N2)))>;
 	    layers = <SYS>;
         };
 
