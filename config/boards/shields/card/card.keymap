@@ -118,6 +118,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+	alpha2macro: behavior_macro_1 {
+		compatible = "zmk,behavior-simple-macro";
+		label = "MACRO1";
+		#binding-cells = <0>;
+		mode = "key-up";
+		sleep = <20>;
+		bindings = < &sl AL2 >;
+	};
     };
        keymap {
                 compatible = "zmk,keymap";
@@ -126,7 +134,7 @@
 		bindings = <
 		&trans 		&hm LCTL L 	&hm LALT G 	&hm LGUI D		&hm RGUI H 	&hm RALT U    		&hm RCTL O	&trans  
 		&hl NM1 I	&hl SM2 S	&hl SM1 R	&hl SYS T 	 	&hl SYS N    	&hl SM1 E   		&hl SM2 A 	&hl NM1 C
-		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&sl AL2		&trans 			&trans		&trans
+		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&alpha2macro	&trans 			&trans		&trans
 								&trans	 		&trans
 		>;
 		};
