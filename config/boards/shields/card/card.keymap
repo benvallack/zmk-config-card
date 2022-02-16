@@ -122,8 +122,6 @@
 		compatible = "zmk,behavior-macro";
 		label = "MACRO1";
 		#binding-cells = <0>;
-		mode = "key-up";
-		sleep = <20>;
 		bindings = < &sl AL2 >;
 	};
     };
