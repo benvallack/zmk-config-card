@@ -119,7 +119,7 @@
             bindings = <&kp>, <&kp>;
         };
 	alpha2macro: behavior_macro_1 {
-		compatible = "zmk,behavior-simple-macro";
+		compatible = "zmk,behavior-macro";
 		label = "MACRO1";
 		#binding-cells = <0>;
 		mode = "key-up";
