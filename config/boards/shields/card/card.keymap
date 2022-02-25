@@ -182,7 +182,7 @@
 
 		sys {
 		bindings = <
-		&trans		 	&kp ESC		&kp LC(LS(TAB)) 	&kp  RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&kp BKSP 			&trans	
+		&trans		 	&kp ESC		&kp LC(LS(TAB)) 	&kp  RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&kp Q BKSP 			&trans	
 		&td LG(GRAVE) TAB	&td HOME DEL	&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
 		&trans 			&trans  	&trans			&sr LSHIFT AL1 		&kp RGUI		&trans 		&trans				&trans 	   
 								 		&trans	 		&trans
