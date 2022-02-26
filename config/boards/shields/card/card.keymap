@@ -176,7 +176,7 @@
 
 		sys {
 		bindings = <
-		&trans		 	&kp ESC		&kp LC(LS(TAB)) 	&kp RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			&trans	
+		&trans		 	&kp ESC		&kp LC(LS(TAB)) 	&kp  RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			&trans
 		&td LG(GRAVE) TAB	&td HOME DEL	&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
 		&trans 			&trans  	&trans			&sr LSHIFT AL1 		&kp RGUI		&trans 		&trans				&trans 	   
 								 		&trans	 		&trans
@@ -195,7 +195,7 @@
        		alpha2cap {
 		bindings = <
 		&trans 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&trans		&kp LS(Z)	&trans 
-		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&td COMMA	&kp LS(X)	&kp LS(Y) 
+		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&kp COMMA	&kp LS(X)	&kp LS(Y) 
 		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp LA(SEMI)	&trans		&trans		&trans
 								&trans	 		&trans
 		>;
