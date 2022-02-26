@@ -26,7 +26,7 @@
 #define SM1 3
 #define SM2 4	
 #define NM1 5	
-#define SYS 6	
+#define SYS 6
 #define BT 7	
 / { 
     combos {
@@ -57,12 +57,6 @@
 	    key-positions = <10 11>;
             bindings = <&kp LALT>; 
 	    layers = <SYS>; 
-        };
-	capalpha2 {
-            timeout-ms = <20>;
-	    key-positions = <19 20>;
-            bindings = <&sl AL2U>;
-	    layers = <AL1 AL2>; 
         };
         lclk {
             timeout-ms = <20>;
@@ -146,9 +140,9 @@
 		};
        		alpha2 {
 		bindings = <
-		&trans 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp COMMA	&kp Z	  	&trans 
-		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&td QMARK EXCL	&kp X		&kp Y 
-		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp DOT		&trans		&trans		&trans
+		&trans 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp SQT		&td Z COMMA	&trans
+		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp DOT		&kp X		&kp Y 
+		&trans	 	&trans 		&trans 		&sk LSHIFT 		&sl AL2U	&trans		&trans		&trans
 								&trans	 		&trans
 		>;
 		};
@@ -164,7 +158,7 @@
 		sym2 {
 		bindings = <
 		&trans		&kp ATSN	&td LA(RBKT) LA(LS(RBKT))	&td  LA(LBKT) LA(LS(LBKT))		&kp LPRN	&kp RPRN 	&kp SEMI 	&trans
-		&kp STAR  	&kp PRCNT	&kp SQT       			&kp DQT   				&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
+		&kp STAR  	&kp PRCNT	&td QMARK EXCL       		&kp DQT   				&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
 		&trans 		&trans 		&trans  			&to AL1					&trans 		&trans 		&trans 		&trans   
 						 			&trans					&trans
 
