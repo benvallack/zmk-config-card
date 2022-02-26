@@ -140,7 +140,7 @@
 		};
        		alpha2 {
 		bindings = <
-		&trans 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp SQT		&td Z COMMA	&trans
+		&trans 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp SQT		&kp Z 		&trans
 		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp DOT		&kp X		&kp Y 
 		&trans	 	&trans 		&trans 		&sk LSHIFT 		&sl AL2U	&trans		&trans		&trans
 								&trans	 		&trans
@@ -176,7 +176,7 @@
 
 		sys {
 		bindings = <
-		&trans		 	&kp ESC		&kp LC(LS(TAB)) 	&kp  RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			&trans	
+		&trans		 	&kp ESC		&kp LC(LS(TAB)) 	&kp RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			&trans	
 		&td LG(GRAVE) TAB	&td HOME DEL	&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
 		&trans 			&trans  	&trans			&sr LSHIFT AL1 		&kp RGUI		&trans 		&trans				&trans 	   
 								 		&trans	 		&trans
@@ -194,9 +194,9 @@
 
        		alpha2cap {
 		bindings = <
-		&trans 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&kp COMMA	&kp LS(Z)	&trans 
-		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&td QMARK EXCL	&kp LS(X)	&kp LS(Y) 
-		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp DOT		&trans		&trans		&trans
+		&trans 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&trans		&kp LS(Z)	&trans 
+		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&td COMMA	&kp LS(X)	&kp LS(Y) 
+		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp LA(SEMI)	&trans		&trans		&trans
 								&trans	 		&trans
 		>;
 		};
