@@ -98,7 +98,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LAYERS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&sl>, <&kp>;
@@ -140,47 +140,47 @@
 		};
        		alpha2 {
 		bindings = <
-		&trans 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp SQT		&kp Z 		&trans
-		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp DOT		&kp X		&kp Y 
-		&trans	 	&trans 		&trans 		&sk LSHIFT 		&sl AL2U	&trans		&trans		&trans
+		&trans 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp SQT			&kp Z 		&trans
+		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp DOT			&kp X		&kp Y 
+		&trans	 	&trans 		&trans 		&sk LSHIFT 		&sl AL2U	&trans			&trans		&trans
 								&trans	 		&trans
 		>;
 		};
 		
        		sym1 {
 		bindings = <
-		&trans 		&hm LCTL LA(N3)   	&hm LALT LS(N3) 		&hm LGUI DLLR    	&hm RGUI LS(COMMA)	&hm RALT LS(DOT)	&hm RSHIFT CARET	&trans
-		&kp GRAVE	&kp TILDE  		&kp MINUS	      		&hl SYS BSLH	 	&kp LBKT		&kp RBKT	 	&kp PIPE	 	&kp SLASH
-		&trans		&trans  		&trans				&sr LSHIFT 0 		&to 2			&trans 			&trans  		&trans
-							 				&trans		 	&trans
+		&trans 		&kp LA(N3)   	&kp LS(N3)	&kp DLLR	    	&kp LS(COMMA)	&kp LS(DOT)		&kp CARET	&trans
+		&kp GRAVE	&kp TILDE 	&kp MINUS      	&kp BSLH	 	&kp LBKT	&kp RBKT	 	&kp PIPE 	&kp SLASH
+		&trans		&trans  	&trans		&trans  		&trans		&trans 			&trans  	&trans
+							 	&trans		 	&trans
 		>;
 		};
 		sym2 {
 		bindings = <
-		&trans		&kp ATSN	&td LA(RBKT) LA(LS(RBKT))	&td  LA(LBKT) LA(LS(LBKT))		&kp LPRN	&kp RPRN 	&kp SEMI 	&trans
-		&kp STAR  	&kp PRCNT	&td QMARK EXCL       		&kp DQT   				&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
-		&trans 		&trans 		&trans  			&to AL1					&trans 		&trans 		&trans 		&trans   
-						 			&trans					&trans
+		&trans		&kp ATSN	&td LA(RBKT) LA(LS(RBKT))	&td  LA(LBKT) LA(LS(LBKT))	&kp LPRN	&kp RPRN 	&kp SEMI 	&trans
+		&kp STAR  	&kp PRCNT	&td QMARK EXCL       		&kp DQT   			&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
+		&trans 		&trans 		&trans  			&trans 				&trans 		&trans 		&trans 		&trans   
+						 				&trans				&trans
 
 		>;
 		};
 
 		num {
 		bindings = <
-		&trans		&hm LCTL DOT 	&hm LALT N0	&hm LGUI N1	 		&hm RGUI N2 	&hm RALT N3	&hm RCTL N4	&trans
-		&kp MINUS	&hl SM2 PLUS 	&hl SM1 N5	&hl SYS N6			&hl SYS N7	&hl SM1 N8	&hl SM2 N9   	&kp EQUAL
-		&trans  	&trans 		&trans		&sr LSHIFT AL1 			&trans 		&trans 		&trans  	&trans 
-								&trans	 		 	&trans
+		&trans		&hm LCTL DOT 	&hm LALT N0	&hm LGUI N1 		&hm RGUI N2 	&hm RALT N3		&hm RCTL N4	&trans
+		&kp MINUS	&hl SM2 PLUS 	&hl SM1 N5	&hl SYS N6		&hl SYS N7	&hl SM1 N8		&hl SM2 N9   	&kp EQUAL
+		&trans  	&trans 		&trans		&sr LSHIFT AL1 		&trans 		&trans 			&trans  	&trans 
+								&trans	 	 	&trans
 		>;
 		};
 
 		sys {
 		bindings = <
-		&trans		 	&kp ESC		&kp LC(LS(TAB)) 	&kp  RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			&trans
-		&td LG(GRAVE) TAB	&td HOME DEL	&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
-		&trans 			&trans  	&trans			&sr LSHIFT AL1 		&kp RGUI		&trans 		&trans				&trans 	   
-								 		&trans	 		&trans
-		>;
+		&trans		 	&kp ESC			&kp LC(LS(TAB)) 	&kp  RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			&trans
+		&td LG(GRAVE) TAB	&td HOME DEL		&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
+		&trans 			&trans 		 	&trans			&sr LSHIFT AL1 		&kp RGUI		&trans 		&trans				&trans 	   
+									 		&trans	 		&trans
+		>
 		};
 
 		bt {
@@ -196,7 +196,7 @@
 		bindings = <
 		&trans 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&trans		&kp LS(Z)	&trans 
 		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&kp COMMA	&kp LS(X)	&kp LS(Y) 
-		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp LA(SEMI)	&trans		&trans		&trans
+		&trans	 	&trans 		&trans 		&trans 			&kp LA(SEMI)	&trans		&trans		&trans
 								&trans	 		&trans
 		>;
 		};
