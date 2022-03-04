@@ -168,7 +168,7 @@
 		num {
 		bindings = <
 		&trans		&hm LCTL DOT 	&hm LALT N0	&hm LGUI N1 		&hm RGUI N2 	&hm RALT N3		&hm RCTL N4	&trans
-		&kp MINUS	&hl SM2 PLUS 	&hl SM1 N5	&hl SYS N6		&hl SYS N7	&hl SM1 N8		&hl SM2 N9   	&kp EQUAL
+		&kp MINUS	&kp PLUS 	&kp N5		&kp N6			&kp N7		&kp N8			&kp N9   	&kp EQUAL
 		&trans  	&trans 		&trans		&sr LSHIFT AL1 		&trans 		&trans 			&trans  	&trans 
 								&trans	 	 	&trans
 		>;
