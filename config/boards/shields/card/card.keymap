@@ -180,7 +180,7 @@
 		&td LG(GRAVE) TAB	&td HOME DEL		&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
 		&trans 			&trans 		 	&trans			&sr LSHIFT AL1 		&kp RGUI		&trans 		&trans				&trans 	   
 									 		&trans	 		&trans
-		>
+		>;
 		};
 
 		bt {
