@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: okke-formsma
-      url-base: https://github.com/okke-formsma
+    - name: benvallack
+      url-base: https://github.com/benvallack
   projects:
-    - name: zmk
-      remote: okke-formsma
-      revision: macros
+    - name: zmk-mouse-macro-dongle
+      remote: benvallack
+      revision: macro-dongle-mouse
       import: app/west.yml
   self:
     path: config
