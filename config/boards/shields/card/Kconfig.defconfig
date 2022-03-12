@@ -1,6 +1,12 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
 if SHIELD_CARD_LEFT
 
 config ZMK_KEYBOARD_NAME
@@ -14,6 +20,25 @@ endif
 if SHIELD_CARD_LEFT || SHIELD_CARD_RIGHT
 
 config ZMK_SPLIT
+	default y
+
+endif
+
+
+
+if SHIELD_CARD_DONGLE 
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if !SHIELD_CARD_DONGLE
+
+config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 
 endif
