@@ -1,5 +1,10 @@
 use this for normal left/right boards
 f6220c9 
+download firmware https://github.com/benvallack/zmk-config-card/actions/runs/1972657762
+this has macro and mouse emulation branches merged
+
 
 use this for dongle
 f416b5e 
+download firmware: https://github.com/benvallack/zmk-config-card/actions/runs/1973549752
+this has mouse, dongle and macro branches merged
