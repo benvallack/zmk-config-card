@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk-mouse-macro-dongle
       remote: benvallack
-      revision: macro-dongle-mouse
+      revision: justmouse
       import: app/west.yml
   self:
     path: config
