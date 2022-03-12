@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: benvallack
-      url-base: https://github.com/benvallack
+    - name: krikun98
+      url-base: https://github.com/krikun98
   projects:
-    - name: zmk-mouse-macro-dongle
-      remote: benvallack
-      revision: justmouse
+    - name: zmk
+      remote: krikun98
+      revision: mouse-pr
       import: app/west.yml
   self:
     path: config
