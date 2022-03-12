@@ -10,10 +10,7 @@ config ZMK_USB
 if SHIELD_CARD_DONGLE
 
 config ZMK_KEYBOARD_NAME
-	default "The Card"
-
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
+	default "The Card Dongle"
 
 endif
 
