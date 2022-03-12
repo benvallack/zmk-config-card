@@ -7,7 +7,7 @@ config ZMK_BLE
 config ZMK_USB
 	default y
 
-if SHIELD_CARD_LEFT
+if SHIELD_CARD_DONGLE
 
 config ZMK_KEYBOARD_NAME
 	default "The Card"
